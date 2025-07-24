@@ -1,0 +1,92 @@
+/* src/components/Login/Login.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Styles for react-phone-number-input component */
+.phoneInputContainer {
+    /* This class is applied by the PhoneInput component to its main div */
+    /* Adjust width if needed, but flex:1 is good for form */
+    width: 100%; /* Make sure it takes full width of its parent */
+    border: 1px solid #ddd; /* Example border, you might prefer it on the input field only */
+    border-radius: 4px; /* Matches input field border radius */
+    overflow: hidden; /* To keep inner elements rounded */
+    display: flex; /* Make it a flex container to align elements */
+    align-items: center; /* Vertically align items */
+}
+
+/* Style for the actual input field within PhoneInput */
+.phoneInputField {
+    /* This class is applied by the PhoneInput component to the input tag */
+    flex-grow: 1; /* Allow the input field to take up available space */
+    padding: 12px;
+    border: none; /* Remove default border as container has one */
+    font-size: 16px;
+    outline: none; /* Remove outline on focus */
+}
+
+/* Style for the country select dropdown */
+.phoneInputContainer .PhoneInputCountry {
+    /* Default class from react-phone-number-input */
+    border-right: 1px solid #eee; /* Separator between country code and number */
+    padding: 0 10px; /* Padding around the flag and dropdown */
+    height: 100%; /* Make it fill container height */
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5; /* Light background for the country code part */
+    border-top-left-radius: 4px; /* Match container border-radius */
+    border-bottom-left-radius: 4px; /* Match container border-radius */
+}
+
+/* Style for the country code dropdown arrow */
+.phoneInputContainer .PhoneInputCountrySelectArrow {
+    /* Default class from react-phone-number-input */
+    color: #666;
+    margin-left: 5px; /* Space between flag and arrow */
+}
+
+
+.button {
+    padding: 12px 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 20px;
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Optional: Adjust flag size or other specific elements if needed */
+/* .PhoneInputCountryIcon--border { ... } */
