@@ -9,7 +9,7 @@ A full-stack Quiz Application built using:
 ---
 
 ## 📦 Project Structure
-
+```plaintext
 QuizApp/
 ├── Frontend/                     # React-based frontend
 ├── QuizeBackend/                # Spring Boot backend
